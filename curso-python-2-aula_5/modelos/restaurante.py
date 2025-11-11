@@ -9,6 +9,7 @@ class Restaurante:
     def __init__(self, nome, categoria):
         self._nome = nome.title()
         self._categoria = categoria.upper()
+        self._cardapio = []
         self._ativo = False
         self._avaliacao = []
         Restaurante.restaurantes.append(self)
@@ -52,3 +53,4 @@ class Restaurante:
         print(f'Cardapio do restaurante {self._nome}\n')
         for i,item in enumerate(self._cardapio, start=1):
             mensagem = f'{i}. Nome:{item._nome} | Preço: R${item._preco}'
+            print(mensagem)

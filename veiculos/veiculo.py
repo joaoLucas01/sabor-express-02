@@ -1,3 +1,5 @@
+from abc import ABC, abstractmethod
+
 class Veiculo:
     def __init__(self, marca, modelo):
         self._marca = marca
@@ -6,5 +8,9 @@ class Veiculo:
 
     def __str__(self):
         return f'{self._marca} | {self._modelo} | {self._ligado}'
+    
+    @abstractmethod
+    def ligar(self):
+        pass
         
 

@@ -7,3 +7,5 @@ class Moto(Veiculo):
 
     def __str__(self):
         return f'{self._modelo} - {self._marca} - {self.finalidade}'
+    
+    ligar()
